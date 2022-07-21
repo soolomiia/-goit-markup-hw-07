@@ -17,29 +17,31 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <div class="nav-container">
-          <nav class="header-nav">
-            <a class="logo-link" href="./index.html">Web<span class="logo-studio">Studio</span></a>
-            <ul class="list-nav">
-              <li class="item-nav-first">
-                <a class="link-header current" href="./index.html">Студія</a>
+        <div class="page-header__container">
+          <nav class="page-header__navigation">
+            <a class="page-header__logo" href="./index.html">Web<span class="logo-studio">Studio</span></a>
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a class="page-header__link current" href="./index.html">Студія</a>
               </li>
-              <li class="item-nav"><a class="link-header" href="./portfolio.html">Портфоліо</a></li>
-              <li class="item-nav"><a class="link-header" href="/">Контакти</a></li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="./portfolio.html">Портфоліо</a></li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="/">Контакти</a></li>
             </ul>
           </nav>
-          <ul class="list-contact">
-            <li class="item-contact-first">
-              <a class="link-contact" href="emailto:info@devstudio.com">
-                <svg class="contact-mail-icon">
+          <ul class="page-header__contacts">
+            <li class="page-header__hookup">
+              <a class="page-header__ref" href="emailto:info@devstudio.com">
+                <svg class="page-header__mail-icon">
                   <use href="./images/icons.svg#icon-mail "></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="item-contact">
-              <a class="link-contact" href="tel:+380961111111">
-                <svg class="contact-phone-icon">
+            <li class="page-header__hookup">
+              <a class="page-header__ref" href="tel:+380961111111">
+                <svg class="page-header__phone-icon">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -52,35 +54,35 @@
     <main>
       <section class="section main-page">
         <div class="container">
-          <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="support" type="button" data-modal-open>Замовити послугу</button>
+          <h1 class="main-page__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="main-page__button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="section studio-facts">
         <div class="container">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="facts-list">
-            <li class="facts-item icon-delivery">
-              <h3 class="facts-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="facts-text">
+          <h2 class="studio-facts__title visually-hidden">Наши преимущества</h2>
+          <ul class="studio-facts__list">
+            <li class="studio-facts__item">
+              <h3 class="studio-facts__name">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="studio-facts__description">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="facts-item">
-              <h3 class="facts-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="facts-text">
+            <li class="studio-facts__item">
+              <h3 class="studio-facts__name">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="studio-facts__description">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="facts-item">
-              <h3 class="facts-title">ПЛАНУВАННЯ</h3>
-              <p class="facts-text">
+            <li class="studio-facts__item">
+              <h3 class="studio-facts__name">ПЛАНУВАННЯ</h3>
+              <p class="studio-facts__description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="facts-item">
-              <h3 class="facts-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="facts-text">
+            <li class="studio-facts__item">
+              <h3 class="studio-facts__name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="studio-facts__description">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -89,10 +91,10 @@
       </section>
       <section class="section presentation">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="list-presentation">
-            <li class="item-presentation">
-              <div class="image-presentation-overlay">
+          <h2 class="presentation__title">Чим ми займаємося</h2>
+          <ul class="presentation__list">
+            <li class="presentation__item">
+              <div class="presentation__overlay">
                 <img
                   class="image img-presentation"
                   src="images/comp.jpg"
@@ -100,13 +102,13 @@
                   width="370"
                   height="294"
                 />
-                <div class="presentation-description">
-                  <p class="presentation-text">Десктопні додатки</p>
+                <div class="presentation__description">
+                  <p class="presentation__text">Десктопні додатки</p>
                 </div>
               </div>
             </li>
-            <li class="item-presentation">
-              <div class="image-presentation-overlay">
+            <li class="presentation__item">
+              <div class="presentation__overlay">
                 <img
                   class="image img-presentation"
                   src="images/phone.jpg"
@@ -114,13 +116,13 @@
                   width="370"
                   height="294"
                 />
-                <div class="presentation-description">
-                  <p class="presentation-text">Мобільні додатки</p>
+                <div class="presentation__description">
+                  <p class="presentation__text">Мобільні додатки</p>
                 </div>
               </div>
             </li>
-            <li class="item-presentation">
-              <div class="image-presentation-overlay">
+            <li class="presentation__item">
+              <div class="presentation__overlay">
                 <img
                   class="image img-presentation"
                   src="images/paint.jpg"
@@ -128,8 +130,8 @@
                   width="370"
                   height="294"
                 />
-                <div class="presentation-description">
-                  <p class="presentation-text">Дизайнерські рішення</p>
+                <div class="presentation__description">
+                  <p class="presentation__text">Дизайнерські рішення</p>
                 </div>
               </div>
             </li>
@@ -138,13 +140,13 @@
       </section>
       <section class="section team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="list-team">
-            <li class="team-card">
-              <img class="image img-team" src="images/4.jpg" alt="igor" width="270" height="260" />
-              <div class="team-text">
-                <h3 class="team-name">Игорь Демьяненко</h3>
-                <p class="team-desc">Product Designer</p>
+          <h2 class="presentation__title">Наша команда</h2>
+          <ul class="team__list">
+            <li class="team__card">
+              <img class="image team__image" src="images/4.jpg" alt="igor" width="270" height="260" />
+              <div class="team__member">
+                <h3 class="team__name">Игорь Демьяненко</h3>
+                <p class="team__description">Product Designer</p>
                 <ul class="list-team-icon">
                   <li class="item-team-icon-first">
                     <a class="link-team-icon" href="">
@@ -177,11 +179,11 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card">
-              <img class="image img-team" src="images/5.jpg" alt="olga" width="270" height="260" />
-              <div class="team-text">
-                <h3 class="team-name">Ольга Репина</h3>
-                <p class="team-desc">Frontend Developer</p>
+            <li class="team__card">
+              <img class="image team__image" src="images/5.jpg" alt="olga" width="270" height="260" />
+              <div class="team__member">
+                <h3 class="team__name">Ольга Репина</h3>
+                <p class="team__description">Frontend Developer</p>
                 <ul class="list-team-icon">
                   <li class="item-team-icon-first">
                     <a class="link-team-icon" href="">
@@ -214,17 +216,17 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card">
+            <li class="team__card">
               <img
-                class="image img-team"
+                class="image team__image"
                 src="images/6.jpg"
                 alt="nikolai"
                 width="270"
                 height="260"
               />
-              <div class="team-text">
-                <h3 class="team-name">Николай Тарасов</h3>
-                <p class="team-desc">Marketing</p>
+              <div class="team__member">
+                <h3 class="team__name">Николай Тарасов</h3>
+                <p class="team__description">Marketing</p>
                 <ul class="list-team-icon">
                   <li class="item-team-icon-first">
                     <a class="link-team-icon" href="">
@@ -257,11 +259,11 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card">
-              <img class="image img-team" src="images/7.jpg" alt="mike" width="270" height="260" />
-              <div class="team-text">
-                <h3 class="team-name">Михаил Ермаков</h3>
-                <p class="team-desc">UI Designer</p>
+            <li class="team__card">
+              <img class="image team__image" src="images/7.jpg" alt="mike" width="270" height="260" />
+              <div class="team__member">
+                <h3 class="team__name">Михаил Ермаков</h3>
+                <p class="team__description">UI Designer</p>
                 <ul class="list-team-icon">
                   <li class="item-team-icon-first">
                     <a class="link-team-icon" href="">
