@@ -1,0 +1,36 @@
+.media-list{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+  .media-list__icon{
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    transition-property: fill ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .media-list__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color:  #FFFFFF;
+  border-radius: 50%;
+  transition-property: background-color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+  .media-list__link:hover .media-list__icon,
+  .link-team-icon:focus .media-list__icon{
+    fill: #FFFFFF;
+  }
+  .media-list__link:hover,
+  .media-list__link:focus{
+    background-color: var(--accent);
+  }
