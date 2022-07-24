@@ -4,11 +4,11 @@
       margin: 0;
     display: flex;
     margin-left: auto;
-   }
-  .contacts__item{
+
+  &__item{
    margin-left: 50px;
   }
-  .contacts__ref{
+  &__ref{
     color:  var(--primary-text-color);
     line-height: 1.5;
     font-weight: 500;
@@ -21,8 +21,13 @@
     transition-property: color ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent);
+    }
   }
-  .contacts__mail-icon{
+  &__mail-icon{
     width: 16px;
     height: 12px;
     fill: var(--primary-text-color) ;
@@ -30,8 +35,13 @@
     transition-property: fill ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contacts__ref:hover &,
+    .contacts__ref:focus &{
+      fill: var(--accent);
+    }
   }
-  .contacts__phone-icon{
+  &__phone-icon{
     width: 10px;
     height: 16px;
     fill: var(--primary-text-color);
@@ -39,16 +49,13 @@
     transition-property: fill ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contacts__ref:hover &,
+    .contacts__ref:focus &{
+      fill: var(--accent);
+    }
   }
-  .contacts__ref:hover .contacts__mail-icon,
-  .contacts__ref:focus .contacts__mail-icon{
-    fill: var(--accent);
-  }
-  .contacts__ref:hover .contacts__phone-icon,
-  .contacts__ref:focus .contacts__phone-icon{
-    fill: var(--accent);
-  }
-  .contacts__ref:hover,
-  .contacts__ref:focus {
-    color: var(--accent);
-  }
+
+
+
+}

@@ -1,7 +1,7 @@
 .regular-clients{
 
-}
-.regular-clients__link{
+
+&__link{
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   background-color: var(--primary-background-color);
@@ -14,20 +14,16 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
+ &:hover,
+ &:focus
+  {
+    cursor: pointer;
+    border: 1px solid var(--accent);
+  }
+}
 
-}
-.regular-clients__link:hover .regular-clients__icon,
-.regular-clients__link:focus .regular-clients__icon {
-  cursor: pointer;
-  fill: var(--accent);
-}
-.regular-clients__link:hover,
-.regular-clients__link:focus
-{
-  cursor: pointer;
-  border: 1px solid var(--accent);
-}
-.regular-clients__icon{
+
+&__icon{
   height: 60px;
   width: 106px;
   padding: 0;
@@ -36,4 +32,11 @@
   transition-property: fill ;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .regular-clients__link:hover &,
+  .regular-clients__link:focus & {
+  cursor: pointer;
+  fill: var(--accent);
+}
+}
 }

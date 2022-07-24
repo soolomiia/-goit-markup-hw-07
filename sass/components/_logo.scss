@@ -7,11 +7,12 @@
     letter-spacing: 0.03em;
     color: var(--accent);
     text-decoration: none;
-}
-.logo__dark{
+
+&__dark{
     color: var(--logo-color);
 }
 
-.logo-light{
+&-light{
   color: var(--invert-text-color);
+}
 }

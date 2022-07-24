@@ -1,11 +1,12 @@
-header{
+.page-header{
     border-bottom: 1px solid #ECECEC;
-  }
-.page-header__container{
+ 
+&__container{
     display: flex;
     align-items: center;
   }
-.page-header__navigation{
+&__navigation{
     display: flex;
     margin: 0;
   }
+}

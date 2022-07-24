@@ -3,19 +3,4 @@ footer{
     padding-top: 60px;
     padding-bottom: 60px;
     border-bottom: var(--accent);
-
-  }
-  .footer-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  .footer-text{
-    font-weight: 700;
-    line-height: 1.2; 
-    color: var(--invert-text-color);
-    margin-bottom: 20px;
-    vertical-align: top;
-    text-transform: uppercase;
-  }
-  
+}

@@ -8,8 +8,8 @@
     justify-content: center;
     margin-top: 20px;
   
-  }
-  .form-privacy__box{
+
+  &__box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,10 +19,10 @@
     border: 2px solid var(--secondary-text-color) ;
     border-radius: 2px;
   }
-  .form-privacy__input{
+  &__input{
     appearance: none;
   }
-  .form-privacy__icon{
+  &__icon{
     width: 14px;
     height: 13px;
     fill: var(--invert-text-color);
@@ -30,17 +30,20 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form-privacy__input:checked + &{
+      background-color: var(--accent);
+      opacity: 1;
+      outline: 2px solid var(--accent);
+    
+    }
   
   }
-  .form-privacy__input:checked + .form-privacy__icon{
-    background-color: var(--accent);
-    opacity: 1;
-    outline: 2px solid var(--accent);
-  
-  }
-  .form-privacy__link{
+
+  &__link{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: var(--accent);
   }
+}
