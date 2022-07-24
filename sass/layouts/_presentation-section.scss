@@ -12,5 +12,11 @@
     margin-left: -30px;
     margin-bottom: 0;
   }
+
+  &__do-card{
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
   
