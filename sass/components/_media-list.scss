@@ -14,7 +14,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     .media-list__link:hover &,
-    .link-team-icon:focus &{
+    .media-list__link:focus &{
       fill: #FFFFFF;
     }
   }
@@ -34,6 +34,7 @@
   &:hover,
   &:focus{
     background-color: var(--accent);
+  
   }
 }
 

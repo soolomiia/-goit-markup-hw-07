@@ -4,6 +4,14 @@
   font-style: normal;
   margin-top: 20px;
 }
+&__map{
+  text-decoration: none;
+  line-height: 1.7;
+  color:   var(--secondary-background-color);
+  transition-property: color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 &__list{
   padding-left: 0;
   margin: 0;

@@ -1,11 +1,12 @@
+@import './base/common';
+@import './base/reset';
+
 
 @import './utils/variables';
-@import './utils/base';
 @import './utils/hidden';
 @import './utils/placeholders.scss';
 
 
-@import './layouts/backdrop';
 @import './layouts/clients-section';
 @import './layouts/footer';
 @import './layouts/header';
@@ -15,6 +16,7 @@
 @import './layouts/studio-facts-section';
 @import './layouts/team-section';
 @import './layouts/presentation-section';
+@import './layouts/footer-section';
 
 
 
@@ -27,7 +29,6 @@
 @import './components/media-list';
 @import './components/regular-clients';
 @import './components/button-section';
-@import './components/footer-section';
 @import './components/service-card';
 @import './components/footer-connexion';
 @import './components/footer-media';
@@ -39,4 +40,6 @@
 @import './components/form-privacy';
 @import './components/feedback';
 @import './components/studio-list';
-
+@import './components/backdrop';
+@import './components/section';
+@import './components/container';
