@@ -1,5 +1,3 @@
-@import './base/common';
-@import './base/reset';
 
 
 @import './utils/variables';
@@ -7,16 +5,9 @@
 @import './utils/placeholders.scss';
 
 
-@import './layouts/clients-section';
-@import './layouts/footer';
-@import './layouts/header';
-@import './layouts/main-page';
-@import './layouts/portfolio-section';
-@import './layouts/service-section';
-@import './layouts/studio-facts-section';
-@import './layouts/team-section';
-@import './layouts/presentation-section';
-@import './layouts/footer-section';
+@import './base/common';
+@import './base/reset';
+
 
 
 
@@ -43,3 +34,15 @@
 @import './components/backdrop';
 @import './components/section';
 @import './components/container';
+@import './components/last-item';
+
+@import './layouts/clients-section';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/main-page';
+@import './layouts/portfolio-section';
+@import './layouts/service-section';
+@import './layouts/studio-facts-section';
+@import './layouts/team-section';
+@import './layouts/presentation-section';
+@import './layouts/footer-section';
